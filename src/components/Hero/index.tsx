@@ -29,7 +29,7 @@ export function Hero() {
                     </p>
 
 
-                    <button className='py-4 px-5 rounded-full border-2 border-violet-400 bg-violet-400/60 text-white font-bold 
+                    <button className='py-4 px-5 rounded-full border-2 border-violet-400 bg-violet-400/60 text-white font-bold z-40
                         hover:bg-transparent transition-colors duration-150'
                     >
                         Começar agora
