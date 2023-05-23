@@ -1,4 +1,3 @@
-import { Heading, Text } from "@ignite-ui/react";
 import Balance from 'react-wrap-balancer'
 
 import underline from '../../assets/underline.svg'
@@ -9,10 +8,10 @@ export function Hero() {
         <section className="w-full mt-14">
             <div className="flex justify-between items-center w-full max-w-7xl mx-auto relative">
                 <div className="flex flex-col items-start mb-20">
-                    <Text size='xs' className="border border-zinc-400/20 bg-zinc-400/5 py-1 px-3 rounded-full text-zinc-400 mb-4">
+                    <p className="border border-zinc-400/20 bg-zinc-400/5 py-1 px-3 rounded-full text-zinc-400 mb-4 text-xs">
                         Confira as ofertas de sua região
-                    </Text>
-                    <Heading className="text-7xl font-bold font-sans tracking-tight text-zinc-100 leading-tight">
+                    </p>
+                    <h2 className="text-7xl font-bold font-sans tracking-tight text-zinc-100 leading-tight">
                         <Balance>
                             Os melhores <span className="relative"><img src={underline} className="absolute right-0 top-20 -rotate-3 opacity-70" alt="Underline" />
                                 {' '}benefícios</span>  em{' '}
@@ -20,14 +19,14 @@ export function Hero() {
                                 poucos passos
                             </span>
                         </Balance>
-                    </Heading>
+                    </h2>
 
-                    <Text className="text-zinc-400 max-w-[500px] my-6">
+                    <p className="text-zinc-400 max-w-[500px] my-6">
                         <Balance>
                             Conheça a Earth Connection, uma plataforma voltada ao bem estar, onder
                             os melhores benefícios da região, você encontra aqui.
                         </Balance>
-                    </Text>
+                    </p>
 
 
                     <button className='py-4 px-5 rounded-full border-2 border-violet-400 bg-violet-400/60 text-white font-bold 
