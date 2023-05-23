@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         sans: 'Inter'
       },
+      fontSize: {
+        base: '1rem'
+      },
       backgoundImage: {
         hero: 'background-image: linear-gradient(139.95deg, #485BFF 21.01%, #FF59F8 73.4%);'
       },
