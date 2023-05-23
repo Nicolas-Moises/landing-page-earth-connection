@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply antialiased
+}
+
+body {
+    @apply font-sans
+}
+
+#cards:hover > .card::after {
+  opacity: 1;
+}
+
+.card {
+  @apply overflow-hidden bg-zinc-400/10 rounded-2xl w-full min-h-[200px] h-full  relative;
+}
+
+.card:hover::before {
+  @apply opacity-100;
+}
+
+.card::before,
+.card::after {
+  border-radius: inherit;
+  content: "";
+  @apply h-full w-full absolute left-0 top-0 opacity-0 transition-opacity duration-200;
+}
+
+.card::before {
+  background: radial-gradient(
+    500px circle at var(--mouse-x) var(--mouse-y), 
+    rgba(54,180,159,0.06),
+    transparent 40%
+  );
+  z-index: 3;
+}
+
+.card::after {  
+  background: radial-gradient(
+    300px circle at var(--mouse-x) var(--mouse-y), 
+    rgba(129, 216, 247, 0.4),
+    transparent 40%
+  );
+  z-index: 1;
+}
+
+.card > .card-content {
+  @apply bg-zinc-950 rounded-2xl inset-[1px] p-8 absolute;
+  z-index: 2;
+}

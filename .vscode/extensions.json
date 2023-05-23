@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "csstools.postcss",
+        "styled-components.vscode-styled-components",
+        "pkief.material-icon-theme"
+    ]
+}
