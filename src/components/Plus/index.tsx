@@ -1,5 +1,3 @@
-import { Heading, Text } from '@ignite-ui/react'
-
 import Balance from 'react-wrap-balancer'
 import { Underline } from '../Underline'
 import { cardFeatures } from '../../constants'
@@ -10,7 +8,7 @@ export function Plus() {
         <section className="w-full mt-48">
             <div className="w-full max-w-7xl mx-auto relative">
                 <div className='flex flex-col items-center'>
-                    <Heading className='text-4xl font-semibold tracking-tightest'>
+                    <h2 className='text-4xl font-semibold tracking-tightest'>
                         <Balance>Qualidade e  {' '}
                             <span className='relative'>
                                 <div className='absolute top-10 right-0'>
@@ -19,10 +17,10 @@ export function Plus() {
                                 conexão
                             </span>
                         </Balance>
-                    </Heading>
-                    <Text className='mt-6 text-zinc-400'>
+                    </h2>
+                    <p className='mt-6 text-zinc-400'>
                         Assine a Earth Connection e faça parte dessa conexão.
-                    </Text>
+                    </p>
                 </div>
 
                 <div id='cards' className='grid grid-cols-4 gap-2 mt-14'>

@@ -1,5 +1,3 @@
-import { Heading } from "@ignite-ui/react";
-
 import cabeleireira from '../../assets/logo-cabeleireira.png'
 import disney from '../../assets/logo-disney.png'
 import google from '../../assets/logo-google.png'
@@ -12,9 +10,9 @@ export function Companies() {
     return (
         <section className="flex ">
             <div className="w-full max-w-[1300px] mx-auto">
-                <Heading size='md' className="font-sans font-semibold text-center mt-32  max-w-7xl mx-auto">
+                <h2 className="font-sans font-semibold text-center mt-32  max-w-7xl mx-auto text-2xl">
                     +20 empresas parceiras sempre com novos benefícios pra você
-                </Heading>
+                </h2>
 
                 <div className="grid grid-cols-6 items-center mt-16" >
                     <div className="w-40">
