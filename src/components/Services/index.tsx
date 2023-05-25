@@ -1,5 +1,3 @@
-import { Heading, Text } from "@ignite-ui/react";
-
 import Balance from 'react-wrap-balancer'
 import { Underline } from "../Underline";
 
@@ -12,23 +10,17 @@ export function Services() {
         <section className="w-full mt-48">
             <div className="w-full max-w-7xl mx-auto relative">
                 <div className='flex flex-col items-center'>
-                    <Text size='xs' className="border border-zinc-400/20 bg-zinc-400/5 py-1 px-3 rounded-full text-zinc-400 mb-4">
+                    <span className="border border-zinc-400/20 bg-zinc-400/5 py-1 px-3 rounded-full text-zinc-400 mb-4 font-xs">
                         Expanda seu negócio
-                    </Text>
-                    <Heading className='text-4xl font-semibold tracking-tightest'>
+                    </span>
+                    <h2 className='text-4xl font-semibold tracking-tightest'>
                         <Balance>
-                            <span className='relative'>
-                                <div className='absolute top-10 right-10 rotate-6'>
-                                    <Underline />
-                                </div>
-                                Parceria{' '}
-                            </span>
-                            com as empresas
+                            Parceria com as empresas
                         </Balance>
-                    </Heading>
-                    <Text className='mt-6 text-zinc-400'>
+                    </h2>
+                    <p className='mt-6 text-zinc-400'>
                         Seja um parceiro e receba acessa a essa linda plataforma para o cadastro de seus benefícios
-                    </Text>
+                    </p>
                 </div>
 
                 <div className="flex flex-col items-center mt-20">

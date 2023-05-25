@@ -10,28 +10,28 @@ export interface PlusProps {
 
 const number = Math.round(Math.random()) * 4
 
+// // export const hoverCard = () => {
+// //     const grid = document.getElementById("cards")
+// //     if (grid) {
+// //         grid.onmousemove = (e) => {
+// //             for (const card of document.getElementsByClassName("card") as HTMLCollectionOf<HTMLElement>) {
+// //                 if(card != null) {
+// //                     const rect = card.getBoundingClientRect(),
+// //                     x = e.clientX - rect.left,
+// //                     y = e.clientY - rect.top;
+
+// //                     card.style.setProperty("--mouse-x", `${x}px`);
+// //                     card.style.setProperty("--mouse-y", `${y}px`);
+// //             };
+// //                 }
+// //         }
+// //     }
+// // }
+
 export function CardPlus({ title, id, icon, content }: PlusProps) {
-
-    const hoverCard = () => {
-        const grid = document.getElementById("cards")
-        if (grid) {
-            grid.onmousemove = (e) => {
-                for (const card of document.getElementsByClassName("card") as HTMLCollectionOf<HTMLElement>) {
-                    if(card != null) {
-                        const rect = card.getBoundingClientRect(),
-                        x = e.clientX - rect.left,
-                        y = e.clientY - rect.top;
-
-                        card.style.setProperty("--mouse-x", `${x}px`);
-                        card.style.setProperty("--mouse-y", `${y}px`);
-                };
-                    }
-            }
-        }
-    }
-    useEffect(() => {
-        hoverCard()
-    }, [])
+    // useEffect(() => {
+    //     hoverCard()
+    // }, [])
 
     return (
         <div className="card group">
@@ -54,7 +54,7 @@ export function CardPlus({ title, id, icon, content }: PlusProps) {
                 group-hover:text-violet-300 transition-colors duration-300">
                     {icon}
                 </div>
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-3 z-10">
                     <h2 className="text-base font-semibold text-zinc-200">{title}</h2>
                     <p className="text-sm text-zinc-400">{content}</p>
                 </div>
