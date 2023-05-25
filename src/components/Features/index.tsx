@@ -26,9 +26,9 @@ export function Features() {
                             </span>
                         </Balance>
                     </h2>
-                    <Text className='mt-6 text-zinc-400'>
+                    <p className='mt-6 text-zinc-400'>
                         Conheça a Earth Connection e faça parte dessa conexão.
-                    </Text>
+                    </p>
                 </div>
 
                 <div className='grid grid-cols-3 gap-2 mt-14'>
