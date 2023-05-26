@@ -14,7 +14,7 @@ export function Tabs() {
             </TabsPrimitive.List>
             <TabsPrimitive.Content value='month' className='mt-10 w-full max-w-md border-2 border-violet-500 rounded-2xl bg-zinc-600/10 p-10'>
                 <div className='flex justify-between items-center'>
-                    <p className='font-extrabold text-lg text-zinc-200'>Inicial</p>
+                    <p className='font-extrabold text-lg text-zinc-200'>Ideal</p>
                     <span className='text-sm py-1 px-3 rounded-full bg-cyan-500 font-bold text-zinc-800'>
                         Mais popular
                     </span>
@@ -24,7 +24,7 @@ export function Tabs() {
                         A plan that scales with your rapidly growing business.
                     </p>
                     <h2 className='text-5xl font-bold text-zinc-100'>
-                        R$ 30,00 <span className='font-medium text-zinc-300 text-base'>/mês</span>
+                        R$ 14,99 <span className='font-medium text-zinc-300 text-base'>/mês</span>
                     </h2>
                     <button className='py-4 rounded-lg bg-violet-500 font-bold border-2 border-violet-500 hover:bg-transparent transition-colors duration-150'>
                         Assinar agora
@@ -51,7 +51,7 @@ export function Tabs() {
             </TabsPrimitive.Content>
             <TabsPrimitive.Content value='semester' className='mt-10 w-full max-w-md border-2 border-violet-500 rounded-2xl bg-zinc-800/20 p-10'>
                 <div className='flex justify-between items-center'>
-                    <p className='font-extrabold text-lg text-zinc-200'>Inicial</p>
+                    <p className='font-extrabold text-lg text-zinc-200'>Ideal</p>
                     <span className='text-sm py-1 px-3 rounded-full bg-cyan-500 font-semibold text-zinc-800'>
                         Mais popular
                     </span>
@@ -61,7 +61,7 @@ export function Tabs() {
                         A plan that scales with your rapidly growing business.
                     </p>
                     <h2 className='text-5xl font-bold text-zinc-100'>
-                        R$ 240,00 <span className='font-medium text-zinc-300 text-base'>/ano</span>
+                        R$ 159,98 <span className='font-medium text-zinc-300 text-base'>/ano</span>
                     </h2>
                     <button className='py-4 rounded-lg bg-violet-500 font-bold border-2 border-violet-500 hover:bg-transparent transition-colors duration-150
                     '>

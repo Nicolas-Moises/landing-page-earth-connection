@@ -12,7 +12,8 @@ import { Star } from 'phosphor-react'
 export function Features() {
 
     return (
-        <section className="w-full mt-20">
+        <section className="w-full mt-20 relative">
+            <div className="absolute left-0 top-1/2 h-[288px] w-[526px] -translate-y-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-cyan-500/30 to-violet-500 opacity-50 blur-full" />
             <div className="w-full max-w-7xl mx-auto relative">
                 <div className='flex flex-col items-center justify-center mb-8'>
                     <img src={arrowDown} className='mb-8' />

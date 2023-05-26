@@ -3,18 +3,19 @@ import {
     InstagramLogo,
     LinkedinLogo,
 } from "phosphor-react";
-import { logoFooter } from "../../assets";
-import { FooterContainer, FooterLinks, FooterLogo } from "./styles";
-
-import 'aos/dist/aos.css';
+import { Link } from "react-router-dom";
 
 export function Footer() {
     return (
-        <FooterContainer>
-            <FooterLogo>
-                <img src={logoFooter} data-aos="zoom-in" />
-                <span data-aos="zoom" data-aos-delay="500">
-                    © Desenvolvido por
+        <footer className="flex items-center justify-between w-full max-w-7xl mx-auto py-14 mt-20 border-t border-zinc-400/20">
+            <div className="flex items-center gap-10">
+                <img src='' />
+                <span className="text-xs text-zinc-400">
+                    
+                     © Earth Connection. 
+                    Todos os direitos reservados 2023
+                    <br />
+                    Desenvolvido com 💜 por
                     <a href="https://www.linkedin.com/in/nicolas-moises-ba91ba1a3/" target="_blank">
                         {" "}
                         Nicolas
@@ -23,34 +24,32 @@ export function Footer() {
                     <a href="https://www.linkedin.com/in/p-medeiros/" target="_blank">
                         {" "}
                         Pedro
-                    </a>{" "}
-                    ツ. Earth Connection. <br />
-                    Todos os direitos reservados 2022
+                    </a>
                 </span>
-            </FooterLogo>
-            <FooterLinks>
-                <a
-                    href=""
+            </div>
+            <div className="flex items-center gap-4">
+                <Link
+                    to="#"
                     target="_blank"
                     data-aos="zoom" data-aos-delay="700"
                 >
-                    <InstagramLogo weight="fill" size={24} />
-                </a>
-                <a
-                    href=""
+                    <InstagramLogo weight="bold" size={22} />
+                </Link>
+                <Link
+                    to="#"
                     target="_blank"
                     data-aos="zoom" data-aos-delay="900"
                 >
-                    <FacebookLogo weight="fill" size={24} />
-                </a>
-                <a
-                    href=""
+                    <FacebookLogo weight="bold" size={22} />
+                </Link>
+                <Link
+                    to="#"
                     target="_blank"
                     data-aos="zoom" data-aos-delay="1000"
                 >
-                    <LinkedinLogo weight="fill" size={24} />
-                </a>
-            </FooterLinks>
-        </FooterContainer>
+                    <LinkedinLogo weight="bold" size={22} />
+                </Link>
+            </div>
+        </footer>
     )
 }

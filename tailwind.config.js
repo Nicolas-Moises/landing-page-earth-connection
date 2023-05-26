@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         sans: 'Inter'
       },
+      blur: {
+        full: '184px',
+      },
       fontSize: {
         base: '1rem'
       },

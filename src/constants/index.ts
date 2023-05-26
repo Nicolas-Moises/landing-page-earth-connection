@@ -1,45 +1,4 @@
 import { ChartBar, ChartLineUp, CurrencyDollar, Gear, Handshake, Lightning, Tag } from "phosphor-react";
-import { charts, currency, design, dollar, handShake, inovation, shield, ticket, trend, userFour, userFriendly, userOne, userThree, userTwo } from "../assets";
-
-export const usersAvatar = [{
-    id: 'avatar-1',
-    img: userOne
-},
-{
-    id: 'avatar-2',
-    img: userTwo
-},
-{
-    id: 'avatar-3',
-    img: userThree
-},
-{
-    id: 'avatar-4',
-    img: userFour
-},]
-
-
-export const cardAbout = [
-    {
-        id: 'card-1',
-        title: 'Benefícios',
-        content: 'Clube de benefícios com as melhores ofertas da região, trazendo uma combinação de qualidade e prêmios.',
-        icon: ticket
-    },
-    {
-        id: 'card-2',
-        title: 'Segurança',
-        content: 'Nossos parceiros são selecionados para proporcionar máxima segurança em nossas conexões.',
-        icon: shield
-    },
-    {
-        id: 'card-3',
-        title: 'Economia',
-        content: 'Economize seu dinheiro participando do clube e fortaleça o crescimento da sua região.',
-        icon: currency
-    },
-
-]
 
 export const cardFeatures = [
     {
@@ -65,25 +24,6 @@ export const cardFeatures = [
         title: 'Conexão',
         content: 'Missão de gerar a conexão entre as pessoas começando pela proximidade',
         icon: Handshake
-    }
-]
-
-export const pricingCard = [
-    {
-        id: 'pricing-1',
-        title: 'Aqui você gasta dinheiro para economizar ainda mais',
-    },
-    {
-        id: 'pricing-2',
-        title: 'Promova o comércio local para crescimento da região',
-    },
-    {
-        id: 'pricing-3',
-        title: 'Benefícios ilimitados (regras presentes nas descrições dos benefícios)',
-    },
-    {
-        id: 'pricing-4',
-        title: 'Ofertas super exclusivas aos assinantes do clube de benefícios',
     }
 ]
 
@@ -137,27 +77,6 @@ export const faqCard = [
         id: 'faq-9',
         title: 'Quero alterar meu plano, é possível?',
         subtitle: 'Por enquanto possuímos apenas um plano único com a mensalidade fixa, mas não se preocupe pois estamos estudando novas formas de abordagem.'
-    },
-]
-
-export const cardAssociationForm = [
-    {
-        id: 'card-1',
-        title: 'Impulsionamento',
-        content: 'Impulsione seu estabelecimento localmente, colaborando com o crescimento da região.',
-        icon: charts
-    },
-    {
-        id: 'card-2',
-        title: 'Aumento da visibilidade',
-        content: 'Mais pessoas verão seu estabelecimento e seu serviço, concretizando assim a conexão.',
-        icon: trend
-    },
-    {
-        id: 'card-3',
-        title: 'Bom pra todos',
-        content: 'Tornar-se um parceiro da Earth é uma oportunidade de fazer parte desse crescimento juntos.',
-        icon: handShake
     },
 ]
 
