@@ -22,7 +22,7 @@ export function Hero() {
                         </Balance>
                     </h2>
 
-                    <p className="text-zinc-400 max-w-[500px] my-6">
+                    <p className="text-zinc-400 max-w-[500px] my-6 leading-relaxed">
                         <Balance>
                             Conheça a Earth Connection, uma plataforma voltada ao bem estar, onder
                             os melhores benefícios da região, você encontra aqui.
