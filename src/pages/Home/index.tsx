@@ -5,6 +5,7 @@ import { Plus } from "../../components/Plus";
 import { Services } from "../../components/Services";
 import { Pricing } from "../../components/Pricing";
 import { Faq } from "../../components/Faq";
+import { Cta } from "../../components/Cta";
 
 export function Home() {
     return (
@@ -16,6 +17,7 @@ export function Home() {
             <Services />
             <Pricing />
             <Faq />
+            <Cta />
         </div>
     )
 }

@@ -9,8 +9,8 @@ import logo from '../../assets/logo-footer.png'
 
 export function Footer() {
     return (
-        <footer className="flex items-center justify-between w-full max-w-7xl mx-auto py-14 mt-20 border-t border-zinc-400/20">
-            <div className="flex items-center gap-10">
+        <footer className="flex flex-col md:flex-row gap-10 items-center justify-between w-full max-w-7xl mx-auto py-14 mt-20 border-t border-zinc-400/20">
+            <div className="flex items-center gap-10 flex-col sm:flex-row">
                 <img src={logo} alt="" className="w-20 h-20 object-contain" />
                 <span className="text-sm text-zinc-400 leading-loose">
                     

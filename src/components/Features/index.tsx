@@ -32,9 +32,9 @@ export function Features() {
                     </p>
                 </div>
 
-                <div className='grid grid-cols-3 gap-2 mt-14'>
-                    <div className='relative p-8 rounded-3xl bg-zinc-950 border border-zinc-400/10 overflow-hidden'>
-                        <img src={featureSignup} className='w-full object-cover' />
+                <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 mt-14'>
+                    <div className='relative p-8 rounded-3xl bg-zinc-950 border border-zinc-400/10 overflow-hidden flex flex-col items-center'>
+                        <img src={featureSignup} className='md:w-full object-cover' />
                         <div className='mt-6 flex flex-col gap-4'>
                             <p className='font-semibold text-zinc-200 text-lg'>
                                 Sign-up simples
@@ -46,9 +46,11 @@ export function Features() {
                         </div>
                     </div>
 
-                    <div className='px-8 pt-8 pb-0 rounded-3xl flex items-start gap-8 bg-zinc-950 border border-zinc-400/10 col-span-2'>
+                    <div className='px-8 pt-8 pb-0 rounded-3xl flex flex-col-reverse lg:items-start gap-8 bg-zinc-950 border border-zinc-400/10 lg:col-span-2 
+                    lg:row-span-1 row-span-2 lg:flex-row items-center
+                    '>
                         <img src={featurePayment} className='w-full max-w-xs object-cover' />
-                        <div className='mt-6 flex flex-col justify-between gap-4 w-2/3 flex-1 h-full pb-16'>
+                        <div className='mt-6 flex flex-col justify-between items-center gap-4 lg:w-2/3 flex-1 h-full pb-16'>
                             <div className=''>
                                 <p className='font-semibold text-zinc-200 text-lg mb-4 text-center'>
                                     Assinatura facilitada
@@ -67,7 +69,8 @@ export function Features() {
                         </div>
                     </div>
 
-                    <div className='px-8 pt-8 pb-0 rounded-3xl flex flex-col items-start gap-8 bg-zinc-950 border border-zinc-400/10 col-span-2'>
+                    <div className='px-8 pt-8 pb-0 rounded-3xl flex flex-col items-start gap-8 bg-zinc-950 border border-zinc-400/10 lg:col-span-2 row-span-2
+                    lg:row-span-1'>
                         <div className='mt-6 flex flex-col gap-4 flex-1'>
 
                             <p className='font-semibold text-zinc-200 text-lg mb-4'>

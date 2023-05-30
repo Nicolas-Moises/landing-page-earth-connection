@@ -10,7 +10,7 @@ export function Faq() {
                     <span className="border border-zinc-400/20 bg-zinc-400/5 py-1 px-3 rounded-full text-zinc-400 mb-4 text-xs">
                         Dúvidas?
                     </span>
-                    <h2 className='text-4xl font-semibold tracking-tightest'>
+                    <h2 className='text-4xl font-semibold tracking-tightest text-center'>
                         <Balance>
                             <span className='relative'>
                                 <div className='absolute top-10 left-0 -rotate-6'>
@@ -25,7 +25,7 @@ export function Faq() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-3 gap-x-6 gap-y-10 mt-20">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10 mt-20">
                     {faqCard.map(card => {
                         return (
                             <div key={card.id} className="flex flex-col items-start gap-4">
