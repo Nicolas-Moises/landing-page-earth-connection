@@ -5,7 +5,7 @@ import { CardPlus } from './components/CardPlus'
 
 export function Plus() {
     return (
-        <section className="w-full mt-48">
+        <section className="w-full mt-48" id='about'>
             <div className="w-full max-w-7xl mx-auto relative">
                 <div className='flex flex-col items-center'>
                     <h2 className='text-4xl font-semibold tracking-tightest'>

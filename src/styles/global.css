@@ -38,6 +38,9 @@ body {
   z-index: 3;
 }
 
+.navlink.active {
+  @apply text-violet-500;
+}
 .card::after {  
   background: radial-gradient(
     300px circle at var(--mouse-x) var(--mouse-y), 

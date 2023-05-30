@@ -5,7 +5,7 @@ import heroImage from "../../assets/mock-mobile-2.png";
 
 export function Hero() {
     return (
-        <section className="w-full mt-14 relative">
+        <section className="w-full mt-36 relative" id='hero'>
             <div className="absolute right-0 top-1/2 h-[288px] w-[526px] -translate-y-1/2 rounded-full bg-purple-700 opacity-50 blur-full" />
             <div className="flex flex-col lg:flex-row justify-between items-center w-full max-w-7xl mx-auto relative">
                 <div className="flex flex-col items-center lg:items-start mb-20">

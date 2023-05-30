@@ -4,7 +4,7 @@ import { Underline } from "../Underline";
 
 export function Faq() {
     return (
-        <section className="w-full mt-48">
+        <section className="w-full mt-48" id='faq'>
             <div className="w-full max-w-7xl mx-auto relative">
                 <div className='flex flex-col items-center'>
                     <span className="border border-zinc-400/20 bg-zinc-400/5 py-1 px-3 rounded-full text-zinc-400 mb-4 text-xs">
