@@ -3,7 +3,7 @@ import { Link as A } from 'react-scroll'
 
 export function MenuNav() {
     return (
-        <nav className="px-8 py-3 rounded-full border border-zinc-400/20 bg-zinc-200/5 hidden lg:flex">
+        <nav className="px-6 py-2 rounded-full border border-zinc-400/20 bg-zinc-200/5 hidden lg:flex">
             <ul className="flex items-center gap-12">
                 <li className="font-medium text-zinc-400 text-sm">
                     <A 

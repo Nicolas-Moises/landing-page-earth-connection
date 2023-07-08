@@ -10,29 +10,7 @@ export interface PlusProps {
 
 const number = Math.round(Math.random()) * 4
 
-// // export const hoverCard = () => {
-// //     const grid = document.getElementById("cards")
-// //     if (grid) {
-// //         grid.onmousemove = (e) => {
-// //             for (const card of document.getElementsByClassName("card") as HTMLCollectionOf<HTMLElement>) {
-// //                 if(card != null) {
-// //                     const rect = card.getBoundingClientRect(),
-// //                     x = e.clientX - rect.left,
-// //                     y = e.clientY - rect.top;
-
-// //                     card.style.setProperty("--mouse-x", `${x}px`);
-// //                     card.style.setProperty("--mouse-y", `${y}px`);
-// //             };
-// //                 }
-// //         }
-// //     }
-// // }
-
 export function CardPlus({ title, id, icon, content }: PlusProps) {
-    // useEffect(() => {
-    //     hoverCard()
-    // }, [])
-
     return (
         <div className="card group">
             <div className="card-content overflow-hidden flex flex-col justify-between items-start group">

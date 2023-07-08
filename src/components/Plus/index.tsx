@@ -2,6 +2,7 @@ import Balance from 'react-wrap-balancer'
 import { Underline } from '../Underline'
 import { cardFeatures } from '../../constants'
 import { CardPlus } from './components/CardPlus'
+import { HighlightGroup } from '../highlighter'
 
 export function Plus() {
     return (
@@ -23,7 +24,7 @@ export function Plus() {
                     </p>
                 </div>
 
-                <div id='cards' className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 mt-14'>
+                <HighlightGroup className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 mt-14'>
                     {cardFeatures.map((feature) => {
                         return (
                             <CardPlus
@@ -35,7 +36,7 @@ export function Plus() {
                             />
                         )
                     })}
-                </div>
+                </HighlightGroup>
             </div>
         </section>
     )

@@ -4,8 +4,8 @@ import { MenuNav } from './components/MenuNav';
 export function Header() {
 
     return (
-        <header className="w-full fixed top-0 left-0 right-0 z-50 backdrop-blur-md">
-            <div className="w-full max-w-7xl mx-auto flex justify-between py-10 items-center">
+        <header className="w-full fixed top-0 left-0 right-0 z-50 backdrop-blur-md"  data-aos="fade-down">
+            <div className="w-full max-w-7xl mx-auto flex justify-between py-4 items-center">
                 <img src={logoHeader} alt="" />
                 <MenuNav />
                 <div className='lg:flex items-center gap-6 hidden '>

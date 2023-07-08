@@ -23,8 +23,8 @@ export function Tabs() {
                     <p className='text-zinc-400'>
                         A plan that scales with your rapidly growing business.
                     </p>
-                    <h2 className='text-5xl font-bold text-zinc-100'>
-                        R$ 14,99 <span className='font-medium text-zinc-300 text-base'>/mês</span>
+                    <h2 className='text-7xl font-bold text-zinc-100 tracking-tight'>
+                        R$15 <span className='font-medium text-zinc-300 text-base tracking-normal'>/mês</span>
                     </h2>
                     <button className='py-4 rounded-lg bg-violet-500 font-bold border-2 border-violet-500 hover:bg-transparent transition-colors duration-150'>
                         Assinar agora
@@ -60,8 +60,8 @@ export function Tabs() {
                     <p className='text-zinc-400'>
                         A plan that scales with your rapidly growing business.
                     </p>
-                    <h2 className='text-5xl font-bold text-zinc-100'>
-                        R$ 159,98 <span className='font-medium text-zinc-300 text-base'>/ano</span>
+                    <h2 className='text-7xl font-bold text-zinc-100 tracking-tight'>
+                        R$ 150 <span className='font-medium text-zinc-300 text-base tracking-normal'>/ano</span>
                     </h2>
                     <button className='py-4 rounded-lg bg-violet-500 font-bold border-2 border-violet-500 hover:bg-transparent transition-colors duration-150
                     '>

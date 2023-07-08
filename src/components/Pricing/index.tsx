@@ -7,7 +7,7 @@ export function Pricing() {
         <section className="w-full mt-48" id="pricing">
             <div className="w-full max-w-7xl mx-auto relative">
                 <div className='flex flex-col items-center'>
-                    <span className="border border-zinc-400/20 bg-zinc-400/5 py-1 px-3 rounded-full text-zinc-400 mb-4 font-xs">
+                    <span className="border border-zinc-400/20 bg-zinc-400/5 py-1 px-3 rounded-full text-zinc-400 mb-4 text-xs">
                         Planos
                     </span>
                     <h2 className='text-4xl font-semibold tracking-tightest'>

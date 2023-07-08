@@ -21,7 +21,6 @@ export function App() {
   }, [])
 
   return (
-
     <ThemeProvider theme={defaultTheme}>
       <BrowserRouter>
         <Router />
@@ -29,7 +28,6 @@ export function App() {
       <ToastContainer />
       <GlobalStyle />
     </ThemeProvider>
-
   )
 }
 

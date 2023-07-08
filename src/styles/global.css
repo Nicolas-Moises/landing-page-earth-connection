@@ -10,10 +10,6 @@ body {
     @apply font-sans text-base;
 }
 
-#cards:hover > .card::after {
-  opacity: 1;
-}
-
 .card {
   @apply overflow-hidden bg-zinc-400/10 rounded-2xl w-full min-h-[200px] h-full  relative;
 }
@@ -32,7 +28,7 @@ body {
 .card::before {
   background: radial-gradient(
     500px circle at var(--mouse-x) var(--mouse-y), 
-    rgba(54,180,159,0.06),
+    rgba(255, 255, 247, 0.07),
     transparent 40%
   );
   z-index: 3;
@@ -44,7 +40,7 @@ body {
 .card::after {  
   background: radial-gradient(
     300px circle at var(--mouse-x) var(--mouse-y), 
-    rgba(129, 216, 247, 0.4),
+    rgba(255, 255, 247, 0.4),
     transparent 40%
   );
   z-index: 1;
