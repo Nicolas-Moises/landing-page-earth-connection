@@ -1,0 +1,9 @@
+{
+  "extends": "@rocketseat/eslint-config/react",
+  "rules": {
+      "no-redeclare":"off",
+      "camelcase": "off",
+      "react-hooks/rules-of-hooks": "off",
+      "react-hooks/exhaustive-deps": "off"
+  }
+}

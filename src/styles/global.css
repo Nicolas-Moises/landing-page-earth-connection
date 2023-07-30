@@ -7,7 +7,7 @@
 }
 
 body {
-    @apply font-sans text-base;
+    @apply font-sans text-base bg-zinc-900 text-zinc-100;
 }
 
 .card {
