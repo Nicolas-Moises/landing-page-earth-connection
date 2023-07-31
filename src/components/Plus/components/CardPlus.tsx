@@ -10,7 +10,7 @@ export interface PlusProps {
 
 const number = Math.round(Math.random()) * 4
 
-export function CardPlus({ title, id, icon, content }: PlusProps) {
+export function CardPlus({ title, icon, content }: PlusProps) {
   return (
     <div className="card group">
       <div className="card-content overflow-hidden flex flex-col justify-between items-start group">

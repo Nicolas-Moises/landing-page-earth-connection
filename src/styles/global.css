@@ -3,73 +3,80 @@
 @tailwind utilities;
 
 * {
-    @apply antialiased;
+  @apply antialiased;
 }
 
 body {
-    @apply font-sans text-base bg-zinc-900 text-zinc-100;
+  @apply font-sans text-base bg-zinc-900 text-zinc-100 font-normal;
+}
+
+
+@keyframes gradient {
+  0% { background-position: 0% 50%;}
+  50% { background-position: 100% 50%;}
+  100% { background-position: 0% 50%; }
 }
 
 .card {
-  @apply overflow-hidden bg-zinc-400/10 rounded-2xl w-full min-h-[200px] h-full  relative;
+@apply overflow-hidden bg-zinc-400/10 rounded-2xl w-full min-h-[200px] h-full  relative;
 }
 
 .card:hover::before {
-  @apply opacity-100;
+@apply opacity-100;
 }
 
 .card::before,
 .card::after {
-  border-radius: inherit;
-  content: "";
-  @apply h-full w-full absolute left-0 top-0 opacity-0 transition-opacity duration-200;
+border-radius: inherit;
+content: "";
+@apply h-full w-full absolute left-0 top-0 opacity-0 transition-opacity duration-200;
 }
 
 .card::before {
-  background: radial-gradient(
-    500px circle at var(--mouse-x) var(--mouse-y), 
-    rgba(255, 255, 247, 0.07),
-    transparent 40%
-  );
-  z-index: 3;
+background: radial-gradient(
+  500px circle at var(--mouse-x) var(--mouse-y), 
+  rgba(255, 255, 247, 0.07),
+  transparent 40%
+);
+z-index: 3;
 }
 
 .navlink.active {
-  @apply text-violet-500;
+@apply text-violet-300;
 }
 .card::after {  
-  background: radial-gradient(
-    300px circle at var(--mouse-x) var(--mouse-y), 
-    rgba(255, 255, 247, 0.4),
-    transparent 40%
-  );
-  z-index: 1;
+background: radial-gradient(
+  300px circle at var(--mouse-x) var(--mouse-y), 
+  rgba(255, 255, 247, 0.4),
+  transparent 40%
+);
+z-index: 1;
 }
 
 .card > .card-content {
-  @apply bg-zinc-950 rounded-2xl inset-[1px] p-8 absolute;
-  z-index: 2;
+@apply bg-zinc-950 rounded-2xl inset-[1px] p-8 absolute;
+z-index: 2;
 }
 
 ::-webkit-scrollbar {
-  width: 0.5rem;
-  background-color: #121214;
+width: 0.5rem;
+background-color: #121214;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #202024;
-  border-radius: 0.5rem;
+background-color: #202024;
+border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: hsl(228, 8%, 54%);
+background-color: hsl(228, 8%, 54%);
 }
 
 @media (max-width: 768px) {
-  html {
-      font-size: 85%;
-  }
-  h1, h2 {
-    font-size: 75%;
-  }
+html {
+    font-size: 85%;
+}
+h1, h2 {
+  font-size: 75%;
+}
 }

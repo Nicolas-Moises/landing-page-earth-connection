@@ -1,48 +1,59 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
+  darkMode: ['class'],
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: '2rem',
+      screens: {
+        '2xl': '1400px',
+      },
+    },
     extend: {
       fontFamily: {
-        sans: 'Inter'
+        sans: 'Inter',
       },
       blur: {
         full: '184px',
       },
-      fontSize: {
-        base: '1rem'
-      },
       backgoundImage: {
-        hero: 'background-image: linear-gradient(139.95deg, #485BFF 21.01%, #FF59F8 73.4%);'
+        hero: 'background-image: linear-gradient(139.95deg, #485BFF 21.01%, #FF59F8 73.4%);',
+        special:
+          'background:linear-gradient(135deg, #818cf8 20%, #8b5cf6 23.50%, #d8b4fe 50%);',
       },
-      colors: {
-        red: {
-          500: '#F75A68',
+      keyframes: {
+        'accordion-down': {
+          from: { height: 0 },
+          to: { height: 'var(--radix-accordion-content-height)' },
         },
-        zinc: {
-          750: '#202024',
-          950: '#09090A',
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: 0 },
         },
-        yellow: {
-          700: '#FBA94C',
+        gradient: {
+          from: {
+            backgoundImage: '0% 50%',
+          },
+          via: {
+            backgoundImage: '100% 50%',
+          },
+          to: {
+            backgoundImage: '0% 50%',
+          },
         },
-        gray: {
-          200: '#DBDCDD',
-          500: '#737380',
-        },
-        green: {
-          300: '#00B37E',
-          500: '#00875F',
-          700: '#015F43',
-        },
-        cyan: {
-          500: '#81D8F7',
-        },
+      },
+      animation: {
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
+        'animation-text': 'gradient 8s ease-out infinite',
       },
     },
-    plugins: [],
-  }
+  },
+  plugins: [require('tailwindcss-animate')],
 }

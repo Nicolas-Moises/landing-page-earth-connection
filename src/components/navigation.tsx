@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom'
 import { Link as A } from 'react-scroll'
 
-export function MenuNav() {
+export function Navigation() {
   return (
-    <nav className="px-6 py-2 rounded-full border border-zinc-400/20 bg-zinc-200/5 hidden lg:flex">
-      <ul className="flex items-center gap-12">
-        <li className="font-medium text-zinc-400 text-sm">
+    <nav className="px-5 py-2 rounded-full border border-zinc-400/20 bg-zinc-200/5 hidden lg:flex">
+      <ul className="flex items-center gap-8">
+        <li className="font-normal text-zinc-300 text-sm">
           <A
-            className="hover:text-violet-300 navlink cursor-pointer"
+            className="hover:text-zinc-200 navlink cursor-pointer"
             to="hero"
             smooth={true}
             spy={true}
@@ -17,9 +17,9 @@ export function MenuNav() {
             Início
           </A>
         </li>
-        <li className="font-medium text-zinc-400 text-sm">
+        <li className="font-normal text-zinc-300 text-sm">
           <A
-            className="hover:text-violet-300 navlink cursor-pointer"
+            className="hover:text-zinc-200 navlink cursor-pointer"
             to="about"
             smooth={true}
             spy={true}
@@ -29,9 +29,9 @@ export function MenuNav() {
             Sobre
           </A>
         </li>
-        <li className="font-medium text-zinc-400 text-sm">
+        <li className="font-normal text-zinc-300 text-sm">
           <A
-            className="hover:text-violet-300 navlink cursor-pointer"
+            className="hover:text-zinc-200 navlink cursor-pointer"
             to="pricing"
             smooth={true}
             spy={true}
@@ -41,9 +41,9 @@ export function MenuNav() {
             Plano
           </A>
         </li>
-        <li className="font-medium text-zinc-400 text-sm">
+        <li className="font-normal text-zinc-300 text-sm">
           <A
-            className="hover:text-violet-300 navlink cursor-pointer"
+            className="hover:text-zinc-200 navlink cursor-pointer"
             to="faq"
             smooth={true}
             spy={true}
@@ -53,9 +53,9 @@ export function MenuNav() {
             FAQ
           </A>
         </li>
-        <li className="font-medium text-zinc-400 text-sm">
+        <li className="font-normal text-zinc-300 text-sm">
           <Link
-            className="hover:text-violet-300 navlink cursor-pointer active:text-violet-400"
+            className="hover:text-zinc-200 navlink cursor-pointer"
             to="/blog"
           >
             Blog
